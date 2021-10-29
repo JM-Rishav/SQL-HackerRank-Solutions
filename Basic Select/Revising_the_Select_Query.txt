@@ -1,0 +1,9 @@
+# Revising the Select Query
+
+# Enter your code here.
+
+SELECT * FROM CITY
+WHERE
+COUNTRYCODE = 'USA'
+AND
+POPULATION >= 100000
