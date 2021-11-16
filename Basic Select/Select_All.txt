@@ -1,0 +1,9 @@
+# Select All
+
+# Enter your code here.
+-- Query all columns(attributes) for every row in the CITY table.
+SELECT * FROM CITY;
+
+
+# Explanation
+"--" can be used to declare comments in mysql just like in python one uses #
