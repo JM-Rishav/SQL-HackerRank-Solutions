@@ -1,0 +1,6 @@
+# Select By ID
+
+# Enter your code here.
+-- finding all columns for a city in CITY table with ID 1661
+SELECT * FROM CITY
+WHERE ID = 1661;
