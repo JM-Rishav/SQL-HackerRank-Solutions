@@ -1,0 +1,6 @@
+# Japanese Cities Attributes
+
+# Enter your code here.
+-- Finding all attributes of every japanese city in CITY table.
+SELECT * FROM CITY
+WHERE COUNTRYCODE = 'JPN';
