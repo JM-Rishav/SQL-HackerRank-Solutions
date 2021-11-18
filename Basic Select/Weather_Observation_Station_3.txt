@@ -1,0 +1,12 @@
+# Weather Observation Station 3
+
+# Enter your code here.
+/*
+list of city names with even id no's
+*/
+SELECT DISTINCT CITY
+FROM STATION
+WHERE ID%2 = 0 
+
+-- for odd id
+-- WHERE ID%2 = 1
