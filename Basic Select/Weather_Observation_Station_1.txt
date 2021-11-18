@@ -1,0 +1,9 @@
+# Weather Observation Station 1
+
+# Enter your code here.
+/*
+Find the list of city and state from STATION table.
+*/
+SELECT CITY
+      ,STATE
+FROM STATION;
