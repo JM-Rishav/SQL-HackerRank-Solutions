@@ -1,0 +1,8 @@
+# Japanese Cities Names
+
+# Enter your code here.
+-- Name of all japanese cities in CITY table.
+-- Its just asking the name of cities only.
+SELECT NAME
+FROM CITY
+WHERE COUNTRYCODE = 'JPN';
