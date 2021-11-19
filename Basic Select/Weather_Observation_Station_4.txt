@@ -1,0 +1,8 @@
+# Weather Observation Station 4
+
+# Enter your code here.
+/*
+Difference b/w total and unique city entries.
+*/
+SELECT (COUNT(CITY) - COUNT(DISTINCT(CITY)))
+FROM STATION
