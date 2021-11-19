@@ -1,0 +1,13 @@
+# Weather Observation Station 5
+
+# Enter your code here.
+/*
+Cities with the longest and shortest city names (with length)
+*/
+
+select city, length(city) from station
+order by length(city),city asc
+limit 1;
+select city, length(city) from station
+order by length(city) desc
+limit 1;
