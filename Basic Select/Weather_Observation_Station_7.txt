@@ -1,0 +1,16 @@
+# Weather Observation Station 7
+
+# Enter your code here.
+/*
+city names ending with vowels.
+*/
+
+SELECT DISTINCT CITY
+FROM STATION 
+-- WHERE RIGHT(CITY,1) IN ('a','e','i','o','u'); 
+WHERE CITY REGEXP "[aeiou]$";
+
+/*
+$ matches End of string
+[...] matches any character listed between the square brackets
+*/
