@@ -1,0 +1,24 @@
+# Weather Observation Station 6
+
+# Enter your code here.
+/*
+List of city name starting with vowels.
+*/
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE CITY REGEXP "^[aeiou].*"
+
+/*
+'.'
+means match any character, thus,
+
+'.*'
+means match any sequence of character Some more details here:
+
+
+s* means begins with s later can be any characters (.*)
+*s means ends with s (*.)
+
+I believe your regex would have to be modified to be "*.[aeiou]$" if you want to test for ending with a vowel.
+
+*/
