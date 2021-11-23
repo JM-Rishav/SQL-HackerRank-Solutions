@@ -1,0 +1,14 @@
+# Weather Observation Station 8
+
+# Enter your code here.
+/*
+City names with vowel in both last and first letter.
+*/
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY REGEXP '^[aeiou]' AND CITY REGEXP '[aeiou]$'
+
+-- select distinct city from station 
+-- where left(city,1) in ('a','e','i','o','u') 
+-- and right(city, 1) in ('a','e','i','o','u')
