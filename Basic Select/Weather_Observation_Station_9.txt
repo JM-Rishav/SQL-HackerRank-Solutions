@@ -1,0 +1,10 @@
+# Weather Observation Station 9
+
+# Enter your code here.
+/*
+city name that do not start with vowels.
+*/
+
+SELECT DISTINCT CITY
+FROM STATION 
+WHERE CITY NOT REGEXP '^[aeiou]'
