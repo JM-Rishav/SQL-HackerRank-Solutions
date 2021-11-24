@@ -1,0 +1,13 @@
+# Weather Observation Station 11
+
+# Enter your code here.
+/*
+city name that either do not start or end with a vowel.
+*/
+
+SELECT DISTINCT CITY 
+FROM STATION 
+WHERE CITY NOT REGEXP '^[AEIOU]' OR CITY NOT REGEXP '[AEIOU]$';
+
+
+-- SELECT DISTINCT CITY FROM STATION WHERE RIGHT (CITY, 1) NOT IN ('A','E', 'I', 'O', 'U') OR LEFT (CITY,1) IN ('A','E', 'I', 'O', 'U');
