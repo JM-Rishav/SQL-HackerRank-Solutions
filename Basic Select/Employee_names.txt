@@ -1,0 +1,10 @@
+# Employee names
+
+# Enter your code here.
+/*
+List of employee names with alphabatical order
+*/
+
+SELECT NAME
+FROM EMPLOYEE
+ORDER BY NAME;
