@@ -1,0 +1,12 @@
+# Employee Salaries
+
+# Enter your code here.
+/*
+List of employee names, salary greater than 2000$ per month, 
+less than 10 months of employee
+*/
+
+SELECT NAME
+FROM EMPLOYEE
+WHERE SALARY > 2000 AND MONTHS < 10
+ORDER BY EMPLOYEE_ID;
