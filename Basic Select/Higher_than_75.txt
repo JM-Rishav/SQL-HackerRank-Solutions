@@ -1,0 +1,12 @@
+# Higher than 75
+
+# Enter your code here.
+/*
+Name of student with score higher than 75 marks.
+sort by last 3 character of the names and by asc order if any of these are same.
+*/
+
+SELECT NAME 
+FROM STUDENTS 
+WHERE MARKS > 75
+ORDER BY SUBSTRING(NAME, -3), ID ASC; 
