@@ -1,0 +1,57 @@
+# Types of Triangle
+
+# Enter your code here.
+/*
+types of records in table triangles using its 3 side lengths.
+*/
+/*
+SELECT CASE
+    WHEN 2 * GREATEST(A, B, C) >= (A + B + C) THEN "Not A Triangle"
+    WHEN A = B AND A = C                      THEN "Equilateral"
+    WHEN A = B OR A = C OR B = C              THEN "Isosceles"
+                                              ELSE "Scalene"
+    END
+FROM TRIANGLES
+*/
+SELECT CASE             
+            WHEN A + B > C AND B + C > A AND A + C > B THEN
+                CASE 
+                    WHEN A = B AND B = C THEN 'Equilateral'
+                    WHEN A = B OR B = C OR A = C THEN 'Isosceles'
+                    ELSE 'Scalene'
+                END
+            ELSE 'Not A Triangle'
+        END
+FROM TRIANGLES;
+
+/*
+The general rule/condition for a valid triangle is that the longest side should be less than the sum of the two other sides:
+
+longestSide < sumOfOtherSides (1)
+
+For example, if you have A, B, and C, where B is the longest side, then the condition B < (A+C) is true for a valid triangle, and false otherwise.
+
+Now, the sum of all the sides of the triangle is (A+B+C). Given B is the longest side, if you want to get the sum of other sides, you have to remove B from the sum of all sides, thus (A+C) = (A+B+C) - (B) or in other words:
+
+sumOfOtherSides = sumOfAllSides - longestSide (2)
+
+With this in mind, the first inequation (1) can now be written as :
+
+longestSide < sumOfAllSides - longestSide
+
+which is equivalent to
+
+longestSide + longestSide < sumOfAllSides
+
+or
+
+2 * longestSide < sumOfAllSides (3)
+
+So, a triangle is valid if and only if inequation (3) is true. If (3) is false, then we have 2 * longestSide >= sumOfAllSides. In MySQL and Oracle SQL, the GREATEST() function returns the greatest value of the guiven arguments. Hence, you have longestSide = GREATEST(A, B, C).
+
+Everything above put together, the final formula to check if a triangle is NOT valid is :
+
+2 * GREATEST(A, B, C) >= (A + B + C)
+
+Hope my explanation was clear and detailed!
+*/
