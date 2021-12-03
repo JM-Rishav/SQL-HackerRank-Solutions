@@ -1,0 +1,22 @@
+# Binary Tree Nodes
+
+# Enter your code here.
+/*
+Finding the node type of binary tree ordered by value of the node.
+N is representing the value of a node.
+P is the parent node of N.
+*/
+
+SELECT CASE
+    WHEN P IS NULL THEN CONCAT(N, ' Root')
+    WHEN N IN (SELECT DISTINCT P FROM BST) THEN CONCAT(N, ' Inner')
+    ELSE CONCAT(N, ' Leaf')
+    END
+FROM BST
+ORDER BY N ASC
+
+-- SELECT N, IF(P IS NULL,'Root',IF((SELECT COUNT(*) FROM BST WHERE P=B.N)>0,'Inner','Leaf')) FROM BST AS B ORDER BY N;
+
+/*
+If any of the nodes in column 'N' are in Parent column 'P' it will be treated as an inner node. else, it will be a leaf node as the entry in 'N' column is not a parent to any other node.
+*/
