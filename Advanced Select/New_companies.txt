@@ -1,0 +1,36 @@
+# New Companies
+
+# Enter your code here
+/*
+to print company_code, founder name, total lead_manager, total number of senior manager, total manager, total number of employees
+Order output by ascending company_code(company code is string).
+*/
+
+SELECT c.company_code, c.founder, COUNT(DISTINCT e.lead_manager_code), COUNT(DISTINCT e.senior_manager_code), COUNT(DISTINCT e.manager_code), COUNT(DISTINCT e.employee_code)
+FROM Company AS c
+INNER JOIN Employee AS e
+ON c.company_code = e.company_code
+GROUP BY c.company_code, c.founder
+ORDER BY c.company_code;
+
+SELECT c.company_code, c.founder, COUNT(DISTINCT l.lead_manager_code), COUNT(DISTINCT s.senior_manager_code), COUNT(DISTINCT m.manager_code), COUNT(DISTINCT e.employee_code)
+FROM Company AS c
+INNER JOIN Lead_Manager AS l
+ON c.company_code = l.company_code
+INNER JOIN Senior_Manager AS s
+ON l.company_code = s.company_code
+INNER JOIN Manager AS m
+ON s.company_code = m.company_code
+INNER JOIN Employee AS e
+ON m.company_code = e.company_code
+GROUP BY c.company_code, c.founder
+ORDER BY c.company_code;
+
+SELECT c.company_code, c.founder, COUNT(DISTINCT l.lead_manager_code), COUNT(DISTINCT s.senior_manager_code), COUNT(DISTINCT m.manager_code), COUNT(DISTINCT e.employee_code)
+FROM Company c, Lead_Manager l, Senior_Manager s, Manager m, Employee e
+WHERE c.company_code = l.company_code
+     AND l.company_code = s.company_code
+     AND s.company_code = m.company_code
+     AND m.company_code = e.company_code
+GROUP BY c.company_code, c.founder
+ORDER BY c.company_code;
