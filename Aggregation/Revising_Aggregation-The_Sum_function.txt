@@ -1,0 +1,10 @@
+# Revising Aggregation - The Sum Function
+
+# Enter your code here.
+/*
+Total population of all cities where district is california
+*/
+
+SELECT SUM(POPULATION)
+FROM CITY
+WHERE DISTRICT = 'CALIFORNIA';
