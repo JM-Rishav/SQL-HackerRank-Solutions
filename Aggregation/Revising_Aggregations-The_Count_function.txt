@@ -1,0 +1,9 @@
+# Revising Aggregation - The Count Function
+
+# Enter your code here.
+/*
+query to find name of all cities where population is greater than 100,000.
+*/
+SELECT COUNT(DISTRICT)
+FROM CITY
+WHERE POPULATION > 100000
