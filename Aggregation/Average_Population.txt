@@ -1,0 +1,14 @@
+# Average Population
+
+# Enter your code here.
+/*
+average population of all cities in city, rounded down to the nearest integer
+*/
+
+SELECT ROUND(AVG(POPULATION))
+FROM CITY
+
+OR
+
+SELECT FLOOR(AVG(POPULATION))
+FROM CITY
