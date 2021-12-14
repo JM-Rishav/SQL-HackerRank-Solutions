@@ -1,0 +1,10 @@
+# Population Density Difference
+
+# Enter your code here.
+/*
+Difference between the maximum and minimum population in city.
+*/
+
+SELECT MAX(POPULATION) - MIN(POPULATION)
+FROM CITY
+
