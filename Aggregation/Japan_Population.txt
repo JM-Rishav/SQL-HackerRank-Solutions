@@ -1,0 +1,10 @@
+# Japan Population
+
+# Enter your code here.
+/*
+sum of population for all japanese cities in CITY.
+*/
+
+SELECT SUM(POPULATION)
+FROM CITY
+WHERE COUNTRYCODE = 'JPN'
