@@ -1,0 +1,14 @@
+# The Blunder
+
+# Enter your code here.
+/*
+Calculating the amount of error(i.e.: actual - miscalculated average monthly salaries), and round it up to the next integer.
+*/
+
+SELECT CEIL(AVG(SALARY) - AVG(REPLACE(SALARY,'0','')))
+FROM EMPLOYEES;
+
+
+
+HINT:- 
+CEILING is operation, which return the smallest integer greater than passed number, so it rounds up to next integer. CONLUSION: So basic difference: CEILING rounds up, while ROUND rounds number in standard way. Another key difference is that ROUND let's you specify number of decimal places you want round to.
