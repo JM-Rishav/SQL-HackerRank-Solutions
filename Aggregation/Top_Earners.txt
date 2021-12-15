@@ -1,0 +1,11 @@
+# Top Earners
+
+# Enter your code here.
+/*
+Find the maximum total earnings for all employees as well as the total number of employees who have maximum total earnings.
+*/
+
+select (salary * months)as earnings ,count(*) 
+from employee 
+group by 1 
+order by earnings desc limit 1;
