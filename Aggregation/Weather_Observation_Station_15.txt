@@ -1,0 +1,20 @@
+# Weather Observation Station 15
+
+# Enter your code here.
+/*
+Western Longitude(LONG_W) for the largest (LAT_N) 
+LAT_N<137.2345 --- 4 decimal places
+*/
+
+
+SELECT ROUND(LONG_W,4)
+FROM STATION 
+WHERE LAT_N = (SELECT MAX(LAT_N)
+               FROM STATION
+               WHERE LAT_N<137.2345);
+               
+-- SELECT ROUND(LONG_W, 4)
+-- FROM STATION
+-- WHERE LAT_N < 137.2345
+-- ORDER BY LAT_N DESC
+-- LIMIT 1;
