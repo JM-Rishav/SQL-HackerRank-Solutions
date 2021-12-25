@@ -1,0 +1,11 @@
+# Weather Observation Station 14
+
+# Enter your code here.
+/*
+Greatest value of Northern Latitudes (LAT_N) 
+less than 137.2345
+*/
+
+SELECT ROUND(MAX(LAT_N),4)
+FROM STATION 
+WHERE LAT_N<137.2345
