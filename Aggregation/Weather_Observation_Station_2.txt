@@ -1,0 +1,12 @@
+# Weather Observation Station 2
+
+# Enter your code here.
+/*
+sum of all values in LAT_N 
+sum of all values in LONG_W
+*/
+
+SELECT ROUND(SUM(LAT_N),2), ROUND(SUM(LONG_W),2)
+FROM STATION;
+
+
