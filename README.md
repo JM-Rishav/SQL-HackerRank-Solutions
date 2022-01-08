@@ -5,3 +5,8 @@ HackerRank Solution for SQL 5 star gold level (Daily Update)
 
 
 ## Advance Select
+
+
+## Aggregation
+
+
