@@ -6,6 +6,7 @@ HackerRank Solution for SQL 5 star gold level (Daily Update)
     01. Basic Select
         - Revising the Select Query I | [Problem](https://www.hackerrank.com/challenges/revising-the-select-query/problem) | [Solution](https://github.com/JM-Rishav/SQL-HackerRank-Solutions/blob/main/Basic%20Select/Revising_the_Select_Query.txt) | Score: 10
         - Revising the Select Query II | [Problem](https://www.hackerrank.com/challenges/revising-the-select-query-2/problem) | [Solution](https://github.com/JM-Rishav/SQL-HackerRank-Solutions/blob/main/Basic%20Select/Revising_the_Select_QueryII.txt) | Score: 10
+        - 
 
 
 
@@ -21,7 +22,7 @@ HackerRank Solution for SQL 5 star gold level (Daily Update)
 
 <!--
 
-        - Revising the Select Query II | [Problem](https://www.hackerrank.com/challenges/revising-the-select-query-2/problem) | [Solution](https://github.com/marinskiy/HackerrankPractice/blob/master/SQL/01.%20Basic%20Select/002.%20Revising%20the%20Select%20Query%20II.sql) | Score: 10
+        
         - Select All | [Problem](https://www.hackerrank.com/challenges/select-all-sql/problem) | [Solution](https://github.com/marinskiy/HackerrankPractice/blob/master/SQL/01.%20Basic%20Select/003.%20Select%20All.sql) | Score: 10
         - Select By ID | [Problem](https://www.hackerrank.com/challenges/select-by-id/problem) | [Solution](https://github.com/marinskiy/HackerrankPractice/blob/master/SQL/01.%20Basic%20Select/004.%20Select%20By%20ID.sql) | Score: 10
         - Japanese Cities' Attributes | [Problem](https://www.hackerrank.com/challenges/japanese-cities-attributes/problem) | [Solution](https://github.com/marinskiy/HackerrankPractice/blob/master/SQL/01.%20Basic%20Select/005.%20Japanese%20Cities'%20Attributes.sql) | Score: 10
