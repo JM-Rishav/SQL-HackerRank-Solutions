@@ -5,7 +5,7 @@ HackerRank Solution for SQL 5 star gold level (Daily Update)
 - SQL
     01. Basic Select
         - Revising the Select Query I | [Problem](https://www.hackerrank.com/challenges/revising-the-select-query/problem) | [Solution](https://github.com/JM-Rishav/SQL-HackerRank-Solutions/blob/main/Basic%20Select/Revising_the_Select_Query.txt) | Score: 10
-        - Revising the Select Query II | [Problem](https://www.hackerrank.com/challenges/revising-the-select-query-2/problem) | [Solution](https://github.com/marinskiy/HackerrankPractice/blob/master/SQL/01.%20Basic%20Select/002.%20Revising%20the%20Select%20Query%20II.sql) | Score: 10
+        - Revising the Select Query II | [Problem](https://www.hackerrank.com/challenges/revising-the-select-query-2/problem) | [Solution](https://github.com/JM-Rishav/SQL-HackerRank-Solutions/blob/main/Basic%20Select/Revising_the_Select_QueryII.txt) | Score: 10
 
 
 
