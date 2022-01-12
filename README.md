@@ -25,8 +25,7 @@ HackerRank Solution for SQL 5 star gold level (Daily Update)
 <!--
 
         
-        - Select All | [Problem](https://www.hackerrank.com/challenges/select-all-sql/problem) | [Solution](https://github.com/marinskiy/HackerrankPractice/blob/master/SQL/01.%20Basic%20Select/003.%20Select%20All.sql) | Score: 10
-        - Select By ID | [Problem](https://www.hackerrank.com/challenges/select-by-id/problem) | [Solution](https://github.com/marinskiy/HackerrankPractice/blob/master/SQL/01.%20Basic%20Select/004.%20Select%20By%20ID.sql) | Score: 10
+        
         - Japanese Cities' Attributes | [Problem](https://www.hackerrank.com/challenges/japanese-cities-attributes/problem) | [Solution](https://github.com/marinskiy/HackerrankPractice/blob/master/SQL/01.%20Basic%20Select/005.%20Japanese%20Cities'%20Attributes.sql) | Score: 10
         - Japanese Cities' Names | [Problem](https://www.hackerrank.com/challenges/japanese-cities-name/problem) | [Solution](https://github.com/marinskiy/HackerrankPractice/blob/master/SQL/01.%20Basic%20Select/006.%20Japanese%20Cities'%20Names.sql) | Score: 10
         - Weather Observation Station 1 | [Problem](https://www.hackerrank.com/challenges/weather-observation-station-1/problem) | [Solution](https://github.com/marinskiy/HackerrankPractice/blob/master/SQL/01.%20Basic%20Select/007.%20Weather%20Observation%20Station%201.sql) | Score: 15
