@@ -10,6 +10,7 @@ HackerRank Solution for SQL 5 star gold level (Daily Update)
         - Select By ID | [Problem](https://www.hackerrank.com/challenges/select-by-id/problem) | [Solution](https://github.com/JM-Rishav/SQL-HackerRank-Solutions/blob/main/Basic%20Select/Select_by_id.txt) | Score: 10
         - Japanese Cities' Attributes | [Problem](https://www.hackerrank.com/challenges/japanese-cities-attributes/problem) | [Solution](https://github.com/JM-Rishav/SQL-HackerRank-Solutions/blob/main/Basic%20Select/Japanese_cities_Attributes.txt) | Score: 10
         - Japanese Cities' Names | [Problem](https://www.hackerrank.com/challenges/japanese-cities-name/problem) | [Solution](https://github.com/marinskiy/HackerrankPractice/blob/master/SQL/01.%20Basic%20Select/006.%20Japanese%20Cities'%20Names.sql) | Score: 10
+        - 
 
 
 
