@@ -1,0 +1,14 @@
+# Weather Observation Station 17
+
+# Enter your code here.
+/*
+LONG_W for the smallest LAT_N, greater than 38.7780
+Round to 4 decimal places
+*/
+
+SELECT ROUND(LONG_W, 4)
+FROM STATION
+WHERE LAT_N =(
+    SELECT MIN(LAT_N)
+    FROM STATION
+    WHERE LAT_N > 38.7780);
