@@ -1,0 +1,11 @@
+# Weather Observation Station 18
+
+# Enter your code here.
+/*
+Manhattan Distance b/w P1 and P2 
+round to 4 decimal points
+*/
+
+    
+SELECT ROUND( MAX(LAT_N)-MIN(LAT_N) + MAX(LONG_W)-MIN(LONG_W), 4) 
+FROM Station;    
