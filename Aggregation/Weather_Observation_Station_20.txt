@@ -1,0 +1,37 @@
+# Weather Observation Station 20
+
+# Enter your code here.
+/*
+Median of the LAT_N from station.
+Round to 4 decimal places.
+*/
+
+select round(LAT_N,4) 
+from station 
+order by lat_n limit 1 offset 249 ;
+
+explanation:- Offset keyword helps us to skip the give number of records. Example in the query:- select round(LAT_N,4) from station order by lat_n limit 1 offset 249 ;
+
+offset is set to 249 so it will skip the first 249 records.
+
+(or)
+
+SET @r = 0;
+SELECT ROUND(AVG(Lat_N), 4)
+FROM (SELECT (@r := @r + 1) AS r, Lat_N FROM Station ORDER BY Lat_N) Temp
+WHERE
+    r = (SELECT CEIL(COUNT(*) / 2) FROM Station) OR
+    r = (SELECT FLOOR((COUNT(*) / 2) + 1) FROM Station)
+
+
+Explanation:- Consider these 2 cases:
+- In a table with an even row count, the average of the 2 "middle rows" is the median
+- In a table with an uneven row count however, only 1 "middle row" will be the median
+
+Example case #1 (table with 200 rows):
+r = (SELECT CEIL(COUNT(*) / 2) FROM Station) will equal 100
+r = (SELECT FLOOR((COUNT(*) / 2) + 1) FROM Station) will equal 101
+
+Example case #2 (table with 201 rows):
+r = (SELECT CEIL(COUNT(*) / 2) FROM Station) will equal 101
+r = (SELECT FLOOR((COUNT(*) / 2) + 1) FROM Station) will also equal 101
